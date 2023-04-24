@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dsa resource page</title>
+    <link rel="stylesheet" href="/css/dsaRes.css">
+</head>
+<body>
+<div class="container">
+  <div class="heading">
+      <a class="btn btn_success" href="/dsaRes">back</a>
+  </div>
+  <div class="form">
+    <h1>Add more DsaResources</h1>
+     <div class="form_container">
+       <form action="/dsaRes" method="post">
+          <input type="text" name="restype" placeholder="restype.....">
+          <input type="text" name="resowner" placeholder="resowner....">
+          <input type="text" name="subject" placeholder="subject....">
+          <!-- <input type="text" name="sdname" placeholder="Student name...."> -->
+          <!-- <textarea name="des" id="" cols="30" rows="10" placeholder="EmailId..."></textarea> -->
+          <textarea name="info" id="" cols="30" rows="10" placeholder="Description..."></textarea>
+          <button class="btn btn-info" type="submit">Submit</button>
+       </form>
+     </div>
+      
+  </div>
+</div>
+</body>

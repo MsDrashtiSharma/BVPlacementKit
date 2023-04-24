@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+           BVPlacementKIT
+        </title>
+ <!-- Favicon-->
+ <link rel="icon" type="image/x-icon" href="images\favicon.ico" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../css/projectResources.css">
+    </head>
+    <body>
+      
+       <section> 
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonialBox">
+                  <h1>Web_D</h1>
+                    <div class="content">
+                      <img src="../images/colt-steele.png"/>
+                      <h2>Colt Steele</h2>
+                      <a href="https://www.udemy.com/course/the-web-developer-bootcamp/"><button type="button" class="btn btn-primary">Click Here!</button></a>
+                  </div>
+                </div>
+                </div>
+
+              <div class="swiper-slide">
+                <div class="testimonialBox">
+                  <h1>App_D</h1>
+                    <div class="content">
+                     <img src="../images/angela_yu.jpg"/>
+                     <h2>Angela Yu</h2>
+                     <a href="https://www.udemy.com/course/ios-13-app-development-bootcamp/"><button type="button" class="btn btn-primary">Click Here!</button></a>
+                    </div>
+                </div>
+                
+              </div>
+              <div class="swiper-slide">
+                <div class="testimonialBox">
+                  <h1>AI/ML</h1>
+                    <div class="content">
+                     <img src="../images/kirill_eremenko.jpg"/>
+                     <h2>Striver</h2>
+                     <a href="https://www.udemy.com/course/artificial-intelligence-az/"><button type="button" class="btn btn-primary">Click Here!</button></a>
+
+                  </div>
+                </div>
+                
+              </div>
+              
+                
+              
+              
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        
+       </section>  
+       
+       <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+       <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+         
+           
+        });
+      </script>
+    </body>
+</html>

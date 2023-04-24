@@ -1,0 +1,111 @@
+
+<style>
+
+body{
+  background-color: darkgray;
+}
+   
+    
+
+    form
+    {
+        margin-right:100px;
+        margin-top:70px;
+        text-align: center;
+        
+        border-color: hsl(0, 0%, 0%);
+        box-shadow:   4px 4px 10px black;
+        width:40%;
+        height:70%;
+       
+        background-color: lightgrey;
+        border-radius: 2%;
+    }
+
+    
+    
+   
+    input{
+       
+        border: solid;
+        font-size:18px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: italic;
+        font-weight: 500px;
+      
+        margin-top: 15px;
+        justify-content: space-around;
+        width:200px;
+        height:40px;
+       
+    }
+    label{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: italic;
+    }
+   
+#id2{
+    width:110px;
+    background-color: black;
+    color:white;
+    height:40px;
+}
+h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow:2px 2px 2px black;
+    font-size: 50px;
+    font-style: italic;
+}
+
+  #pass{
+    margin-right:23px;
+  }
+div{
+    padding-left:450px;
+}
+#id1{
+    margin-top:50px;
+}
+
+</style>
+
+<% include('../layouts/header.ejs') %>
+
+<h1> User SignUp </h1>
+
+
+<% 
+
+if(typeof  message !== 'undefined'){
+    %>
+    <p style ="color: green;"><%= message %></p>
+    <%
+}
+%>
+<div>
+<form  class="" action=""  method="post"  align:center>
+    <table>
+        <td>
+            
+                <tr  id="tr1"> <label  id="l1"><b>Name :</b></label></tr>
+                <tr><input  id="id1"  type = "text" name="name"  placeholder=" Enter Name" required></tr>
+                </td>
+    <br><br>
+    <td>
+    <tr><label><b>Email :</b></label></tr>
+    <tr><input type = "email" name="email"  placeholder=" Enter Email" required></tr>
+    </td>
+    <br><br>
+    <td>
+    <tr><label><b>Password :</b></label></tr>
+    <tr><input  id="pass" type = "password" name="password"  placeholder=" Enter Password" required></tr>
+    </td>
+    <br><br>
+    <b><input id="id2" type = "submit" value="Register"></b>
+  </table>
+</form>
+</div>
+
+
+<% include('../layouts/footer.ejs') %>

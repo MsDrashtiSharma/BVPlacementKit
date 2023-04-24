@@ -1,0 +1,91 @@
+body {
+    font-family: "Lato", sans-serif;
+    position: relative;
+    
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 230px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #7d3c3c;
+    overflow-x: hidden;
+    padding-top: 50px;
+    border:solid 3px rgb(33, 30, 29);
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f6f6f6;
+    display: block;
+    margin:10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+  }
+  
+  .sidenav a:hover {
+    color: #f70707;
+  }
+  
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 10px 20px;
+    
+    
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .container{
+    position:relative;
+    border:solid 3px black;
+    border-radius:20px;
+    box-shadow: 30px 30px 30px #836969;
+    padding:10px;
+    margin:40px;
+  }
+  .container   h1 {
+         font-size: 30px;
+         align-content: center;
+         text-decoration: underline;
+         font-family:Georgia, serif;
+         font-style: italic;
+         
+        
+  }
+  body > h1 {
+    font-family:Arial, Helvetica, sans-serif;
+     text-decoration:underline;
+     font-size: 50px;
+     text-shadow: 5px 20px 20px rgb(48, 47, 50);
+     text-decoration: dotted;
+     color: #ff0000;
+     
+     
+  }
+  .container fieldset
+  { padding: 10px;
+    margin:20px;
+     font-size:20px;
+     border: 3px solid rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  legend{
+        font-weight:bolder;
+        
+  }
+  fieldset table tr:first-child{
+         background-color:rgb(200, 211, 115);
+         font-weight: 300;
+         font-family: Arial, Helvetica, sans-serif;
+         
+  }
+  

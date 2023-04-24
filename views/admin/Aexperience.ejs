@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>experience page</title>
+    <link rel="stylesheet" href="/css/experience.css">
+</head>
+<body>
+ <div class="container">
+    <div class="heading">
+        <h1>Experience page</h1> 
+        <!-- <a class="btn btn_success" href="/article/new">New Experience</a> -->    
+    </div>
+    <div class="blog">
+        <% article.forEach(element=>{%>
+          <div class="blog_post">
+            <h1><%=element.copname%></h1>
+            <!-- <h2><%=element.emailid%></h2> -->
+            <h2><%=element.pos%></h2>
+            <h2><%=element.sdname%></h2> 
+            <p><%=element.info.substring(0,80).concat('...') %></p>
+          
+          <div class="buttons">
+            <a class="btn btn_success"href="/admin/show/<%= element.slug%>">
+              Read More
+          </a>
+            <a class="btn btn_danger"href="/admin/exp/delete/<%= element.id %>">
+              Delete
+          </a>
+          </div>
+        </div>
+       <% });%>
+    </div>
+   
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+.collapsible {
+   position:relative;
+    background-color: #c8c4c4;
+    color: #1a1919;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: 10px;
+    font-size: 20px;
+    font-weight:1000;
+    border-radius: 15px;
+    box-shadow: 0 9px #e0a4a4;
+    margin:20px;
+  }
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #e3c5c5;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px); 
+  }
+  .collapsible:after {
+    content: '\002B';
+    color: #141313;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    font-size:30px;
+  }
+  .active:after {
+    content: "\2212";
+  }
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    font-size:50px;
+  }
+  .tr1 {
+      background-color:rgb(190, 191, 196);
+      color:#1a1919;
+  }
+  tr{
+    font-size:30px;
+    font-weight:500;
+    color:rgb(156, 109, 141);
+  }
+  table{
+    background-color:rgb(224, 241, 246);
+    width:100%
+  }
+  a:link {
+    color: rgb(80, 54, 184);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgb(195, 121, 47);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:visited {
+    color: rgb(90, 53, 194);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  body{
+    background-image:url("../images/images.jpg");
+    background-size:contain;
+   
+  }
+  h1{
+    font-family: 'Dancing Script', cursive;
+font-family: 'Merriweather', serif;
+    font-weight:100px;
+    font-style:oblique;
+  }
+  
+  

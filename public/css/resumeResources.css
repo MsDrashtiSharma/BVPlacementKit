@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+  }
+  
+  section{
+      position:relative;
+      width:100%;
+      min-height: 100%;
+      display:flex;
+      justify-content: center;
+      align-items:center;
+      /* background-color: #ffffff; */
+      background-image: url("../images/c.jpg");
+      overflow:hidden; 
+       /* Do not repeat the image */
+       background-size: cover; 
+  }
+  .swiper-mySwiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+   
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 320px;
+       height: 300px; 
+      background-color: rgb(15, 2, 30);
+      box-shadow: 0 15px 50px rgb(2, 225, 255) ;
+      border-radius: 10px;
+     
+  
+    }
+  
+    .swiper-slide p {
+      display: block;
+      width: 100%;
+    }
+    .testimonialBox{
+      position: relative;
+      width:100%;
+      padding: 40px;
+      padding-top: 90px;
+      color:rgb(64, 205, 218);
+  
+    }
+ 
+    .testimonialBox .content img{
+      position: relative;
+      width: 110px;;
+      height:110px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 10px;
+     
+      border: 7px solid #ffffff;
+      
+    }
+    .testimonialBox h1{
+      position: absolute;
+      
+      font-family: 'Dancing Script', cursive;
+      top:20px;
+      right:30px;
+      color:  #f7eeee;
+      font-weight: 600;
+      line-height:1.1em ;
+     
+      padding:2px;
+      
+    }
+    .testimonialBox h2{
+      position: absolute;
+      
+      font-family: 'Dancing Script', cursive;
+      bottom:10px;
+      left:50px;
+     
+      color: rgb(255, 255, 255);
+      font-weight: 600;
+      line-height:1.1em ;}
+  
+    .btn {
+      font-family: 'Libre Baskerville', serif;
+      font-weight: 600;
+    }
+   
+    
+    .swiper-3d .swiper-slide-shadow-left, 
+    .swiper-3d .swiper-slide-shadow-right 
+    {
+      background-image: none;
+    }

@@ -1,0 +1,116 @@
+<style>
+
+    
+body{
+  background-color: darkgray;
+}
+   
+
+    form
+    {
+        margin-right:100px;
+        margin-top:70px;
+        text-align: center;
+        
+        border-color: hsl(0, 0%, 0%);
+        box-shadow:   4px 4px 10px black;
+        width:40%;
+        height:70%; 
+       
+        background-color: lightgrey;
+        border-radius: 2%;
+    }
+
+    
+    
+   
+    input{
+       
+        border: solid;
+        font-size:18px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: italic;
+        font-weight: 500px;
+      
+        margin-top: 15px;
+        justify-content: space-around;
+        width:200px;
+        height:40px;
+       
+    }
+    label{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: italic;
+    }
+   
+#id2{
+    width:120px;
+    background-color: black;
+    color:white;
+    height:40px;
+    margin-top:50px;
+    text-decoration: solid;
+}
+h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow:2px 2px 2px black;
+    font-size: 70px;
+    font-style: italic;
+}
+
+  #pass{
+    margin-right:23px;
+  }
+div{
+    padding-left:450px;
+}
+#id1{
+    margin-top:110px;
+}
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+<% include('../layouts/header.ejs') %>
+
+
+
+
+<h1>Forget ?  </h1>
+
+ 
+<%
+    if(typeof message !== 'undefined')
+{
+    %>
+    <h4><%= message %></h4>
+    <%
+ }
+
+ %>
+
+
+<div>
+<form   action ="/forget"  method="post">
+    <label><b>Email :</b></label>
+    <input  id="id1" type="email"  name="email"  required   placeholder="Enter email">
+    <br><br>
+    
+    <input   id="id2"  type ="submit"  value="Send Reset Link">
+</form>
+
+</div>
+
+
+<% include('../layouts/footer.ejs') %>

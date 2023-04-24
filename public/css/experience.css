@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    list-style:none;
+}
+body{
+    font-family:'Roboto',serif;
+    background-color: rgb(177, 208, 160);
+}
+.container{
+    padding:30px 50px;
+}
+.heading{
+    padding:60px 0;
+}
+.heading h1{
+    font-size:62px;
+    text-align:center;
+    padding:20px 0;
+}
+/*custom button*/
+
+.btn{
+    padding:10px 18px;
+    text-align:center;
+    font-size:18px;
+    box-shadow:0px 2px 3px #03000a94;
+    transition: .5s ease-in-out;
+    border:1px solid;
+    background-color: antiquewhite
+};
+
+.btn_success{
+    background:rgb(30, 43, 161);
+    color:#afff;
+}
+.btn_success:hover{
+    background-color:rgb(201, 187, 213);
+    border:1px solid;
+    background:transparent;
+}
+.btn_info{
+    background-color: rgb(8,77,141);
+    color:#e34d4d;
+}
+.btn_info:hover{
+color:rgb(8,77,141);
+border:1px solid;
+background: transparent;
+}
+
+.btn_danger{
+    background: rgb(149,9,56);
+    color:#fff;
+}
+.btn_danger:hover{
+    color:rgb(149,9,56);
+    border:1px solid;
+    background: transparent;
+}
+
+/*blog area*/
+.blog{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-gap:20px;
+}
+.blog .blog_post{
+    padding: 10px;
+    height:300px;
+    width:90%;
+    border-radius: 0 130px 0 132px;
+    margin:auto;
+    box-shadow: 0px 2px 20px 3px #03000a94;
+    display: flex;
+    flex-direction: column;
+    justify-content: space around;
+    position:relative;
+    background-color: rgb(225, 224, 246);
+}
+.blog .blog_post h1{
+    color:green;
+    font-size:32px;
+    text-transform:capitalize;
+
+}
+.blog .blog_post p{
+   font-size: 16px;
+   overflow: hidden;
+   height:50px; 
+}
+.blog .blog_post h5{
+    font-weight: bolder;
+    color:indigo;
+    font-size:14px;
+}
+.buttons{
+    margin: 0 10px;
+    margin-left:24px;
+
+}
+.button a{
+    margin:0 2px;
+    display:inline-block;
+    text-transform: capitalize;
+    animation: animate .5s forwards;
+}
+
+/*form*/
+.form{
+    display:grid;
+    grid-template-columns: 30% 70%;
+    height:600px;
+}
+
+.form_container{
+    padding:0 0px;
+}
+
+.form_container form{
+    box-shadow:1px 2px 3px #03000a94 ;
+    padding:10px 20px;
+    background-color: bisque;
+}
+.form_container form input,.form_container form textarea{
+    width: 100%;
+    padding:10px 10px;
+    margin:10px
+}
+
+.form_container form button{
+    margin-left:20px;
+    background:rgb(8,77,141);
+    color:#fff;
+    border:1px solid rgb(8,77,141);
+    outline:none; 
+}
+.form_container form button:hover{
+    color:rgb(8,77,141);
+    background:#fff;
+    border:1px solid rgb(8,77,141);
+} 
+
+
+
+/* single post */
+
+.single_post{
+    width:70%;
+    margin:auto;
+    box-shadow:1px 2px 3px #03000a94;
+    padding:10px 30px;
+    background-color: antiquewhite;
+}
+
+.single_post h1{
+    font-size:34px;
+    padding:15px 0;
+    text-align: center;
+}
+.single_post p{
+resize:vertical;
+padding:20px;
+}
+
+
+
+
+
+

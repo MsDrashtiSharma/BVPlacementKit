@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dsa resource page</title>
+    <link rel="stylesheet" href="/css/coreRes.css">
+</head>
+<body><div class="container">
+    <div class="heading">
+        <h1>Core subject Resource page</h1>
+        
+        
+    </div>
+    <div class="blog">
+        <% dsaRes.forEach(element=>{%>
+        <div class="blog_post">
+            <h1><%=element.subject%></h1>
+            <!-- <h2><%=element.emailid%></h2> -->
+            <h2><%=element.restype%></h2>
+            <h2><%=element.resowner%></h2>
+           
+          
+          <div class="buttons">
+            <p><a class="btn btn_success" href="<%=element.info %>">Click Here</a></p>
+            <a class="btn btn_danger"href="/admin/coreRes/delete/<%= element.id %>">
+                Delete
+            </a>
+           </p>
+          </div>
+        </div>
+       <% });%>
+    </div>
+   
+</div>
+</body>
+</html>

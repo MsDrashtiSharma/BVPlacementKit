@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BVPlacementKit</title>
+     <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link href="../css/oops.css" rel="stylesheet">
+</head>
+<body>
+    
+    <h1><center>OOPS TOP INTERVIEW QUESTIONS</center></h1>
+    <div class="sidenav" >
+        
+        <a href="#Introduction">Introduction</a>
+        <a href="#Class&objects">Class&objects</a>
+        <dl>
+             <dt><a href="#Inheritance">Features</a> </dt>
+             <dd><a href="#Inheritance">Inheritance</a></dd>
+             <dd><a href="#Polymorphism">Polymorphism</a></dd>
+             <dd><a href="#Encapsulation">Encapsulation</a></dd>
+             <dd><a href="#Dataabstraction">Data abstraction</a></dd>
+        </dl>
+        <a href="#Methods">Methods</a>
+        <a href="#Exception">Exception</a>
+        <a href="#Limitations">Limitations</a>
+      </div>
+<div class="main" >
+    <div class="container" id="Introduction" style="background-color: rgb(243, 209, 125);">
+        <h1>Basic OOPs</h1>
+        <fieldset id="f1">
+            <legend> What is the difference between OOP and SOP?</legend>
+            <table border="1" cellspacing="0">
+                <tr>
+                    <td align="center"><b>Object-Oriented Programming</b></td>
+                    <td align="center"><b>Structural Programming</b></td>
+                </tr>
+                <tr>
+                    <td>Object-Oriented Programming is a type of programming which is based on objects rather than just functions and procedures</td>
+                    <td>Provides logical structure to a program where programs are divided functions</td>
+                </tr>
+                <tr>
+                    <td>Bottom-up approach</td>
+                    <td>Top-down approach</td>
+                </tr>
+                <tr>
+                    <td>Provides data hiding</td>
+                    <td>Does not provide data hiding
+                    </td>
+                </tr>
+                <tr>
+                    <td>Can solve problems of any complexity</td>
+                    <td>Can solve moderate problems</td>
+                </tr>
+                <tr>
+                    <td>Code can be reused thereby reducing redundancy</td>
+                    <td>Does not support code reusability</td>
+                </tr>
+
+            </table>
+           </fieldset>
+          <fieldset id="f2">
+             <legend>What is OOPs?</legend>
+             Object-Oriented Programming(OOPs) is a type of programming that is based on objects 
+             rather than just functions and procedures. Individual objects are grouped into classes. OOPs implements
+              real-world entities like inheritance, polymorphism, hiding, etc into programming. 
+             It also allows binding data and code together.
+          </fieldset>
+          <fieldset id="f3">
+            <legend>Why OOPs?</legend>
+             <ul>
+               <li>OOPs allows clarity in programming thereby allowing simplicity in solving complex problems</li> 
+               <li> Code can be reused through inheritance thereby reducing redundancy</li>
+               <li>Data and code are bound together by encapsulation </li>
+               <li>OOPs allows data hiding, therefore, private data is kept confidential </li>
+               <li>Problems can be divided into different parts making it simple to solve </li>
+               <li>The concept of polymorphism gives flexibility to the program by allowing the entities to have multiple forms</li>
+             </ul>
+         </fieldset>
+         <fieldset id="f4">
+            <legend>What are the main features of OOPs?</legend>
+             <ul>
+               <li>Inheritance</li> 
+               <li> Encapsulation</li>
+               <li>Polymorphism </li>
+               <li>Data Abstraction</li>
+             </ul>
+         </fieldset>
+    </div>
+    <div class="container" id="Class&objects" style="background-color: rgb(244, 166, 166);">
+        <h1>Classes and Objects</h1>
+        <fieldset id="f5">
+            <legend>What is an object?</legend>
+            An object is a real-world entity which is the basic unit of OOPs for example chair, cat, dog, etc. Different objects
+             have different states or attributes, and behaviors.
+         </fieldset>
+         <fieldset id="f6">
+            <legend>What is a class?</legend>
+            A class is a prototype that consists of objects in different states and with different behaviors. It has a number of methods 
+            that are common the objects present within that class.
+         </fieldset>
+         <fieldset id="f7">
+            <legend> What is the difference between a class and a structure?</legend>
+            <b>Class:</b> User-defined blueprint from which objects are created. It consists of methods or set of instructions that are to be performed on the objects.
+
+            <b>Structure:</b> A structure is basically a user-defined collection of variables which are of different data types.
+         </fieldset>
+         <fieldset id="f8">
+            <legend>Can you call the base class method without creating an instance?</legend>
+            Yes, you can call the base class without instantiating it if:
+            <ul>
+            <li> It is a static method</li>
+            <li>The base class is inherited by some other subclass</li>
+            </ul>
+        </fieldset>
+        <fieldset id="f9">
+            <legend> What is the difference between a class and an object?</legend>
+            <table border="1" cellspacing="0">
+                <tr>
+                    <td align="center"><b>class</b></td>
+                    <td align="center"><b>object</b></td>
+                </tr>
+                <tr>
+                    <td>A real-world entity which is an instance of a class</td>
+                    <td>A class is basically a template or a blueprint within which objects can be created</td>
+                </tr>
+                <tr>
+                    <td>An object acts like a variable of the class</td>
+                    <td>Binds methods and data together into a single unit</td>
+                </tr>
+                <tr>
+                    <td>An object is a physical entity</td>
+                    <td>A class is a logical entity</td>
+                </tr>
+                <tr>
+                    <td>Objects take memory space when they are created</td>
+                    <td>A class does not take memory space when created</td>
+                </tr>
+                <tr>
+                    <td>Objects can be declared as and when required</td>
+                    <td>Classes are declared just once</td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+      
+        <div class="container" id="Inheritance" style="background-color: rgb(243, 209, 125);">
+            <h1>Inheritance</h1>
+        <fieldset id="f10">
+            <legend>What is inheritance?</legend>
+            Inheritance is a feature of OOPs which allows classes inherit common properties from other classes. For example, 
+            if there is a class such as vehicle, other classes like car, bike, etc can inherit common properties from the vehicle class. 
+            This property helps you get rid of redundant
+             code thereby reducing the overall size of the code.
+         </fieldset>
+         <fieldset id="f11">
+            <legend>What are the different types of inheritance?</legend>
+            <ul>
+                <li>Single inheritance</li> 
+                <li>Multiple inheritance</li>
+                <li>Multilevel inheritance</li>
+                <li>Hierarchical inheritance</li>
+                <li>Hybrid inheritance</li>
+              </ul>
+         </fieldset>
+         <fieldset id="f12">
+            <legend>What is the difference between multiple and multilevel inheritance?</legend>
+            <table border="1" cellspacing="0">
+                <tr>
+                    <td align="center"><b>Multiple Inheritance</b></td>
+                    <td align="center"><b>Multilevel Inheritance</b></td>
+                </tr>
+                <tr>
+                    <td>Multiple inheritance comes into picture when a class inherits more than one base class</td>
+                    <td>Multilevel inheritance means a class inherits from another class which itself is a subclass of some other base class</td>
+                </tr>
+                <tr>
+                    <td>Example: A class defining a child inherits from two base classes Mother and Fathers</td>
+                    <td>Example: A class describing a sports car will inherit from a base class Car which inturn inherits another class Vehicle</td>
+                </tr>
+
+            </table>
+         </fieldset>
+        <fieldset id="f13">
+            <legend> What is hybrid inheritance?</legend>
+            Hybrid inheritance is a combination of multiple and multi-level inheritance.
+        </fieldset>
+        <fieldset id="f14">
+            <legend> What is hierarchical inheritance?</legend>
+        Hierarchical inheritance refers to inheritance where one base class has more than one subclasses. For example, the vehicle class can have ‘car’, ‘bike’, etc as its subclasses.
+        </fieldset>
+        <fieldset id="f15">
+            <legend>What are the limitations of inheritance?</legend>
+            <ul>
+                <li>Increases the time and effort required to execute a program as it requires 
+                    jumping back and forth between different classes</li> 
+                <li>The parent class and the child class get tightly coupled</li>
+                <li>Any modifications to the program would require changes both in the parent as well as the child class</li>
+                <li>Needs careful implementation else would lead to incorrect results</li>     
+              </ul>
+        </fieldset>
+        <fieldset id="f16">
+            <legend>What is a superclass?</legend>
+            A superclass or base class is a class that acts as a parent to some other class or classes. For example, the Vehicle class is a superclass of class Car.
+        </fieldset>
+        <fieldset id="f17">
+            <legend>What is a superclass?</legend>
+            A superclass or base class is a class that acts as a parent to some other class or classes. For example, the Vehicle class is a superclass of class Car.
+        </fieldset>
+
+        </div>
+        <div class="container" id="Polymorphism" style="background-color: rgb(244, 166, 166);">
+            <h1>Polymorphism</h1>
+            <fieldset id="f18">
+                <legend> What is polymorphism?</legend>
+                Polymorphism refers to the ability to exist in multiple forms. Multiple definitions can be given to a single interface. For example, 
+                if you have a class named Vehicle, it can have a method named speed but you cannot define it because different vehicles have different speed. This method will be defined in the subclasses with different definitions for different vehicles.
+            </fieldset>
+            <fieldset id="f19">
+                <legend>What is static polymorphism?</legend>
+                Static polymorphism (static binding) is a kind of polymorphism that occurs at compile time. An example of compile-time polymorphism is method overloading.
+            </fieldset>
+            <fieldset id="f20">
+                <legend> What is dynamic polymorphism?</legend>
+                Runtime polymorphism or dynamic polymorphism (dynamic binding) is a type of polymorphism which is resolved during runtime. An example of runtime polymorphism is method overriding.
+            </fieldset>
+            <fieldset id="f21">
+                <legend>What is method overloading?</legend>
+                Method overloading is a feature of OOPs which makes it possible to give the same name to more than one methods within a class if the arguments passed differ.
+            </fieldset>
+            <fieldset id="f22">
+                <legend>What is method overriding?</legend>
+                Method overriding is a feature of OOPs by which the child class or the subclass can redefine methods present in the base class or parent class. Here, the method that is overridden has the same name as well as the signature
+                 meaning the arguments passed and the return type.
+            </fieldset>
+            <fieldset id="f23">
+                <legend>What is operator overloading?</legend>
+                Operator overloading refers to implementing operators using user-defined types based on the arguments passed along with it.
+            </fieldset>
+            <fieldset id="f24">
+                <legend>What is the difference between multiple and multilevel inheritance?</legend>
+                <table border="1" cellspacing="0">
+                    <tr>
+                        <td align="center"><b>Overloading</b></td>
+                        <td align="center"><b>Overriding</b></td>
+                    </tr>
+                    <tr>
+                        <td>Two or more methods having the same name but different parameters or signature</td>
+                        <td>Child class redefining methods present in the base class with the same parameters/ signature</td>
+                    </tr>
+                    <tr>
+                        <td>Resolved during compile-time</td>
+                        <td>Resolved during runtime</td>
+                    </tr>
+    
+                </table>
+             </fieldset>
+        </div>
+        <div class="container" id="Encapsulation" style="background-color: rgb(243, 209, 125);">
+            <h1>Encapsulation</h1>
+            <fieldset id="f25">
+                <legend>What is encapsulation?</legend>
+                Encapsulation refers to binding the data and the code that works on that together in a single unit. For example, a class. Encapsulation also allows data-hiding as the data specified in one class is hidden from other classes.
+            </fieldset>
+            <fieldset id="f26">
+                <legend>What are ‘access specifiers’?</legend>
+                Access specifiers or access modifiers are keywords that determine the accessibility of methods, classes, etc in OOPs. These access specifiers allow the implementation of encapsulation. The most common access specifiers are public, private and protected. However, there are a few more which are specific to the programming languages.
+            </fieldset>
+            <fieldset id="f27">
+                        <legend> What is the difference between a private,publicand protected?</legend>
+                        <table border="1" cellspacing="0">
+                            <tr>
+                                <td align="center"><b>Name</b></td>
+                                <td align="center"><b>Accessibility from own class</b></td>
+                                <td align="center"><b>Accessibility from derived class</b></td>
+                                <td align="center"><b>Accessibility from world</b></td>
+                            </tr>
+                            <tr>
+                                <td>Public</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Private</td>
+                                <td>Yes</td>
+                                <td>No</td>
+                                <td>No</td>
+                            </tr>
+                            <tr> <td>Protected</td>
+                                <td>Yes</td>
+                                <td>Yes</td>
+                                <td>No</td>
+                            </tr>
+                        </table>
+                    </fieldset>
+            <h4 id="Dataabstraction">Data abstraction</h4>
+            <fieldset id="f28">
+                <legend>What is data abstraction?</legend>
+                Data abstraction is a very important feature of OOPs that allows displaying only the important information and hiding the implementation details. For example, while riding a bike, you know that if you raise the accelerator, the speed will increase, but you don’t know how it actually happens.
+                 This is data abstraction as the implementation details are hidden from the rider.
+            </fieldset>
+            <fieldset id="f29">
+                <legend>How to achieve data abstraction?</legend>
+                Data abstraction can be achieved through:
+                <ul>
+                    <li>Abstract class</li>
+                    <li>Abstract method</li>
+                </ul>
+            </fieldset>
+            <fieldset id="f30">
+                <legend>What is an abstract class?</legend>
+                An abstract class is a class that consists of abstract methods. 
+                These methods are basically declared but not defined. If these methods are to be used in some subclass, they need to be exclusively defined in the subclass.
+            </fieldset>
+            <fieldset id="f31">
+                <legend>Can you create an instance of an abstract class?</legend>
+                No. Instances of an abstract class cannot be created because it does not have a complete implementation. However, instances of subclass inheriting the abstract class can be created.
+             </fieldset>
+             <fieldset id="f32">
+                <legend>What is an interface?</legend>
+                It is a concept of OOPs that allows you to declare methods without defining them. Interfaces, unlike classes, are not blueprints because they do not contain detailed instructions or actions to be performed. Any class that implements an interface defines the methods of the interface.
+             </fieldset>
+             <fieldset id="f33">
+                <legend> What is the difference between Data abstraction and Encapsulation?</legend>
+                <table border="1" cellspacing="0">
+                    <tr>
+                        <td align="center"><b>Data abstraction</b></td>
+                        <td align="center"><b>Encapsulation</b></td>
+                    </tr>
+                    <tr>
+                        <td>Solves the problem at the design level</td>
+                        <td>Solves the problem at the implementation level</td>
+                    </tr>
+                    <tr>
+                        <td>Allows showing important aspects while hiding implementation details</td>
+                        <td>Binds code and data together into a single unit and hides it from the world</td>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
+    
+    <div class="container" id="Methods" style="background-color: rgb(244, 166, 166);">
+        <h1>Methods and Functions</h1>
+        <fieldset id="f34">
+            <legend>What are pure virtual functions?</legend>
+            Pure virtual functions or abstract functions are functions that are only declared in the base class. This means that they do not contain any definition in the base class and need to be redefined in the subclass.
+        </fieldset>
+        <fieldset id="f35">
+            <legend>What is a constructor?</legend>
+            A constructor is a special type of method that has the same name as the class and is used to initialize objects of that class.
+        </fieldset>
+        <fieldset id="f36">
+            <legend>What is a destructor?</legend>
+            A destructor is a method that is automatically invoked when an object is destroyed. The destructor also recovers the heap space that was allocated to the destroyed object, closes the files and database connections of the object, etc.
+         </fieldset>
+         <fieldset id="f37">
+            <legend>Types of constructors</legend>
+            
+            Types of constructors differ from language to language. However, all the possible constructors are:
+            <ul>
+                <li>Default constructor</li> 
+                <li>Parameterized constructor</li>
+                <li>Copy constructor</li>
+                <li>Static constructor</li>  
+                <li>Static constructor</li>     
+            </li>     
+              </ul>
+         </fieldset>
+         <fieldset id="f38">
+            <legend> What is the difference between Data abstraction and Encapsulation?</legend>
+            <table border="1" cellspacing="0">
+                <tr>
+                    <td align="center"><b>Class</b></td>
+                    <td align="center"><b>Method</b></td>
+                </tr>
+                <tr>
+                    <td>A class is basically a template that binds the code and data together into a single unit. Classes consist of methods, variables, etc</td>
+                    <td>Callable set of instructions also called a procedure or function that are to be performed on the given data</td>
+                </tr>
+            </table>
+        </fieldset>
+            <fieldset id="f39">
+                <legend>What is a copy constructor?</legend>
+                A copy constructor creates objects by copying variables from another object of the same class. The main aim of a copy constructor is to create a new object from an existing one.
+            </fieldset>
+            <fieldset id="f39">
+                <legend>What is the use of ‘finalize’?</legend>
+                Finalize as an object method used to free up unmanaged resources and cleanup before Garbage Collection(GC). It performs memory management tasks.
+            </fieldset>
+            <fieldset id="f40">
+                <legend>What is Garbage Collection(GC)?</legend>
+                GC is an implementation of automatic memory management. The Garbage collector frees up space occupied by objects that are no longer in existence.
+             </fieldset>
+             <fieldset id="f41">
+                <legend>What is a final variable?</legend>
+                A variable whose value does not change. It always refers to the same object by the property of non-transversity.
+             </fieldset>
+       
+    </div>
+    <div class="container" id="Exception" style="background-color: rgb(243, 209, 125);">
+        <h1>Exception Handling</h1>
+        <fieldset id="f42">
+            <legend>What is an exception?</legend>
+            An exception is a kind of notification that interrupts the normal execution of a program. Exceptions provide a pattern to the error and transfer the error to the exception handler to resolve it. The state of the program is saved as soon as an exception is raised.
+        </fieldset>
+        <fieldset id="f43">
+            <legend> What is exception handling?</legend>
+            Exception handling in Object-Oriented Programming is a very important concept that is used to manage errors. An exception handler allows errors to be thrown and caught and implements a centralized mechanism to resolve them.
+        </fieldset>
+        <fieldset id="f44">
+            <legend>What is a try/ catch block?</legend>
+            A try/ catch block is used to handle exceptions. The try block defines a set of statements that may lead to an error. The catch block basically catches the exception.
+        </fieldset>
+        <fieldset id="f45">
+            <legend> What is a finally block?</legend>
+            A finally block consists of code that is used to execute important code such as closing a connection, etc. This block executes when the try block exits. It also makes sure that finally block executes even in case some unexpected exception is encountered.
+         </fieldset>
+         <fieldset id="f46">
+            <legend>What is the difference between an error and an exception?</legend>
+            <table border="1" cellspacing="0">
+                <tr>
+                    <td align="center"><b>Error</b></td>
+                    <td align="center"><b>Exception</b></td>
+                </tr>
+                <tr>
+                    <td>Errors are problems that should not be encountered by applications</td>
+                    <td>Conditions that an application might try to catch</td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+    <div class="container" id="Limitations" style="background-color: rgb(244, 166, 166);">
+        <h1>Limitations of OOPs</h1>
+         <fieldset id="f47">
+            <legend>What are the limitations of OOPs?</legend>
+            <ul>
+                <li>Usually not suitable for small problems</li> 
+                <li>Requires intensive testing</li>
+                <li>Takes more time to solve the problem</li>
+                <li>Requires proper planning</li>  
+                <li>The programmer should think of solving a problem in terms of objects</li>     
+            </li>     
+              </ul>
+         </fieldset>   
+    </div>
+</div>
+</body>
+</html>

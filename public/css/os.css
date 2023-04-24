@@ -1,0 +1,68 @@
+body {
+    font-family: "Lato", sans-serif;
+    position: relative;
+    
+  } 
+  .main {
+    margin-left: 50px; 
+    margin-right: 50px; 
+    font-size: 20px;
+  }
+  .container{
+    position:relative;
+    border:solid 3px black;
+    border-radius:20px;
+    box-shadow: 30px 30px 30px #232121;
+    padding:0px 0px 0px 0px;
+    margin:40px;
+    
+  }
+  .container img
+  { padding:10px 10px 5px 10px;
+    display:block;
+    width:300px;
+    height:270px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+    border-radius:30%;
+    box-shadow: 10px 10px 10px rgb(55, 70, 209);
+   
+  }
+  .container h1{
+    padding-left:10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    text-decoration: underline;
+    color:rgb(6, 50, 121);
+
+  }
+  body > h1 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif; 
+     font-size: 70px;
+     text-shadow: 5px 20px 20px rgb(48, 47, 50);
+     color: #dd2d2d; 
+  }
+  .container fieldset
+  { padding: 10px 10px 10px 10px;;
+    margin:20px;
+     font-size:20px;
+     border: 3px solid rgb(7, 14, 74);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+  }
+  .container table{
+    
+    margin:20px;
+    
+  }
+  legend{
+        font-weight:bolder;      
+  }
+  fieldset table tr:first-child{
+         background-color:rgb(188, 255, 2);
+         font-weight: 400;
+         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif       
+  }
+  

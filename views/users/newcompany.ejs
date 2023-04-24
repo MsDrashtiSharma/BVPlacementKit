@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Favicon-->
+     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BVPlacementKit</title>
+    <link rel="stylesheet" href="/css/companydetails.css">
+</head>
+<body>
+<div class="container">
+    <div class="heading">
+        <a class="btn btn_success" href="/companydetails">Previous Page</a>
+    </div>
+    <div class="form">
+       <div class="form_container">
+        <h1>Add more Comapny Details</h1>
+       <form action="/companydetails" method="post">
+            
+            <label>Company Name:-</label>
+            <input type="text" name="cpname" placeholder="Company name">
+            <label>Company's Description:-</label>
+            <textarea name="infor" id="" cols="30" rows="10" placeholder="Add Description"></textarea>
+            <label>Month:-</label>
+            <input type="text" name="time" placeholder="Month of Comning">
+            <label>Role:-</label>
+            <input type="text" name="role" placeholder="role">
+            <label>Elegiblity Criteria:-</label>
+            <input type="text" name="eligiblity" placeholder="eligiblity">
+            <button class="btn btn-info" type="submit">Add+</button>
+        </form>
+       </div> 
+    </div>
+</div>
+</body>
+</html>
